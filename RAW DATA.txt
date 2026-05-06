@@ -1,0 +1,38 @@
+Output used in presentation on 4/27:
+        
+        Greedy Simple Reversal Sort (CPU) Runtime Data:
+        ---
+        Size: 100, Avg Time (20 Trials): 0.00002228 s
+        Size: 1000, Avg Time (20 Trials): 0.00193297 s
+        Size: 10000, Avg Time (20 Trials): 0.187013 s
+        Size: 100000, Avg Time (20 Trials): 18.9373 s
+
+        Takeaway: 10x input = ~100x increase in runtime
+
+        Greedy Reversal Sort (GPU) Runtime Data:
+        ---
+        Size: 100, Avg Time: 0.00495629 s
+        Size: 1000, Avg Time: 0.0469198 s
+        Size: 10000, Avg Time: 0.545712 s
+        Size: 100000, Avg Time: 26.7957 s
+
+        Takeaway: The algorithm is slower on th GPU due to runtime overhead
+                  But, for sufficiently large n, it may end up faster
+    
+        Breakpoint Reversal Sort (CPU) Runtime Data:
+        ---
+        Size: 25, Avg Time (20 Trials): 0.00199821 s
+        Size: 50, Avg Time (20 Trials): 0.0293347 s
+        Size: 100, Avg Time (20 Trials): 0.459612 s
+        Size: 200, Avg Time (20 Trials): 7.33383 s
+
+        Takeaway: 2x input = ~10x to 15x increase in runtime
+    
+        Breakpoint Reversal Sort (GPU) Runtime Data:
+        ---
+        Size: 25, Avg Time (20 Trials): 0.00148102 s
+        Size: 50, Avg Time (20 Trials): 0.0057684 s
+        Size: 100, Avg Time (20 Trials): 0.0282776 s
+        Size: 200, Avg Time (20 Trials): 0.198938 s
+
+        Takeaway: 2x input = ~ <10x increase in runtime, much better scaling
