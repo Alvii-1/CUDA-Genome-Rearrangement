@@ -1,15 +1,3 @@
-/*
-Zohaib Alvi
-CS 502 Computation Biology Algorithms 
-GPU Acccelerated Analysis of Genome Rearrangement Algorithms
-Spring 2026
-
-Hardware setup (Windows 11 Desktop PC)
----
-CPU: Ryzen 5 9600X
-GPU: RTX 4070 Desktop  
-*/
-
 #include <iostream>
 #include <algorithm>
 #include <random>
